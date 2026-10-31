@@ -1,0 +1,54 @@
+[
+	{
+		"caption": "Tools",
+		"mnemonic": "T",
+		"id": "tools",
+		"children": [
+			{
+				"caption": "CoworkingView",
+				"id": "coworkingview",
+				"children": [
+					{
+						"caption": "Search Workspaces",
+						"command": "coworkingview_search_workspaces"
+					},
+					{
+						"caption": "Insert Listing Link",
+						"command": "coworkingview_insert_listing_link"
+					},
+					{
+						"caption": "Market Rates",
+						"command": "coworkingview_market_rates"
+					}
+				]
+			}
+		]
+	},
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children": [
+			{
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "CoworkingView",
+						"children": [
+							{
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args": {
+									"base_file": "${packages}/CoworkingView/CoworkingView.sublime-settings",
+									"default": "{\n\t$0\n}\n"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

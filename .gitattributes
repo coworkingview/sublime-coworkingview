@@ -1,0 +1,9 @@
+# Package Control installs from `git archive`. Keep development files out
+# of the package users receive. .python-version stays: Sublime Text reads
+# it to select the 3.8 plugin host.
+
+tests/            export-ignore
+.github/          export-ignore
+.gitignore        export-ignore
+.flake8           export-ignore
+CHANNEL_ENTRY.md  export-ignore

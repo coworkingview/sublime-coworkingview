@@ -1,0 +1,21 @@
+CoworkingView
+==============
+
+Search flexible workspaces and read city price-index figures from the
+public CoworkingView API, without leaving Sublime Text.
+
+Open the Command Palette and run:
+
+  CoworkingView: Search Workspaces
+  CoworkingView: Insert Listing Link
+  CoworkingView: Market Rates
+  Preferences: CoworkingView Settings
+
+Settings live under Preferences > Package Settings > CoworkingView > Settings.
+"locale" is en, de, or es. "insert_format" controls the link inserted at
+the cursor (markdown, url, plaintext, or a {title} {url} template).
+
+This package does not ship key bindings. Requests go only to
+https://api.coworkingview.com when you run a command. There is no telemetry.
+
+Listings: https://coworkingview.com

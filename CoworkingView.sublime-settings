@@ -1,0 +1,27 @@
+{
+	// Language sent to the API and used in listing URLs.
+	// "en" -> https://coworkingview.com/en/workspace/{slug}
+	// "de" -> https://coworkingview.com/de/buero/{slug}
+	// "es" -> https://coworkingview.com/es/oficina/{slug}
+	"locale": "en",
+
+	// Text inserted at the cursor by "Insert Listing Link", and by
+	// "Search Workspaces" when "on_select" is "insert".
+	// "markdown"  -> [Title](https://coworkingview.com/...)
+	// "url"       -> https://coworkingview.com/...
+	// "plaintext" -> Title (https://coworkingview.com/...)
+	// Any other value that contains "{" is a template. Placeholders:
+	// {title} {url} {slug} {city} {zone} {operator} {country}
+	"insert_format": "markdown",
+
+	// What "Search Workspaces" does with the listing you pick.
+	// "open"   -> open https://coworkingview.com in the browser
+	// "insert" -> insert "insert_format" at the cursor
+	// "ask"    -> quick panel with both choices
+	// "Insert Listing Link" always inserts, ignoring this value.
+	"on_select": "open",
+
+	// How many listings one search requests. The API accepts 1 to 50.
+	// The command reads a single page; it does not walk the catalogue.
+	"page_size": 20
+}
